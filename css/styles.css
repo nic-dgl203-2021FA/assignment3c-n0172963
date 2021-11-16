@@ -1,0 +1,58 @@
+/*---------------- animation -------------------------*/
+.animation1 {
+    animation: typing 3s steps(180) infinite,/* time duration and speed typing (typing 180 characters in 3s) */
+    blinking 0.5s steps(1) infinite;
+    color: #433F55;
+    overflow: hidden; 
+    border-right: .15em solid #CE2D4F; 
+    margin-inline: auto; /* let content in center*/
+    white-space: nowrap; 
+    letter-spacing: .15em;
+}
+  
+  @keyframes typing {
+    0% {
+      width:0px;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blinking {
+    0%, 100% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #CE2D4F;
+    }
+  }
+
+
+@keyframes scaleIn {
+    0% {transform: scale(1.5);} /*increase size when start*/
+    100% {transform:scale(0.5);} /* decrease size until end*/
+}
+
+.animation2 {
+    font-family: "Fira Sans", sans-serif;
+    color: #DCF2B0;
+    text-shadow: 3px 3px 0px #59C3C3;
+    animation-name: scaleIn;
+    animation-fill-mode: backwards;
+    /* repeat animation */
+    animation: scaleIn 3s infinite;
+}
+
+.animation3 {
+    color: white;
+    width: 80px;
+    background: rgb(49, 211, 223);
+    transition: width 2s;
+    /* https://cubic-bezier.com/#.16,.79,.86,.42 */
+    transition-timing-function: cubic-bezier(.16,.79,.86,.42);
+}
+  
+.animation3:hover {
+    width: 600px;
+}

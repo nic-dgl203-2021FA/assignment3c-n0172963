@@ -10,10 +10,10 @@
   <link href="css/styles.css" rel="stylesheet">
   <title>Bootstrap</title>
 </head>
-<body>
+<body class="bg-info"  data-spy="scroll" data-target="#scrollspy-nav" data-offset="110">
 <!-- header section -->
-<header id="header">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<header>
+  <nav id="scrollspy-nav" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
     <a href="#" class="navbar-brand">
       <img src="images/logotype.png" height="28" alt="CoolBrand">
     </a>
@@ -21,22 +21,31 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" href="#header">Header</a>
-        <a class="nav-link" href="#">Portfolio</a>
-        <a class="nav-link" href="#">Animation</a>
-        <a class="nav-link" href="#">Skills</a>
-        <a class="nav-link" href="#">Education</a>
-        <a class="nav-link" href="#">Footer</a>
-      </div>
+        <ul class="navbar-nav smooth-scroll list-unstyled">
+            <li class="nav-item scroll-link">
+                <a class="nav-link" href="#profile">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio_section">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#animation_section">Animation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills_section">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#education_section">Education</a>
+            </li>
+        </ul>
     </div>
   </nav>
-  <div class="jumbotron text-center">
+  <div id="profile" class="jumbotron text-center bg-secondary">
     <img src="images/5.png" height="200" alt="CoolBrand">
     <h1 class="display-4">Hello, I'm Nhu Vu!</h1>
     <p class="lead">I'm Nhu Vu. I'm a Student from NIC, majored in Commonication Design. I'm currently living in Virginia, U.S</p>
     <hr class="my-4">
-    <p>32X Wilderness Rd, Hampton, VA </p>
+    <p>3XX Wilderness Rd, Hampton, VA</p>
     <p>Email: nvu@northislandcollege.ca</p>
     <p>Phone: 503.860.XXXX</p>
     <p class="lead">
@@ -90,44 +99,68 @@
     </div>
   </div>
 </header>
-<!-- portfolio section -->
-<div id="portfolio_section" style="width: 99%;">
-  <h1 class="display-4 d-flex justify-content-center">Portfolio</h1>
-  <div class="row d-flex justify-content-center">
-    <div class="col-lg-3 col-md-4 col-sm-10 d-flex align-items-stretch">
-      <div class="card" >
-        <img class="card-img-top" src="images/1.jpeg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">The Whale Island</h5>
-          <p class="card-text">The Island Whale is my last critique drawing created in FIN-110 on Fall term 2020. The basic concept is about the greatness of nature and how human lives are bonded with it. The project was inspired by the Indigenous origin stories about a turtle island, which also stands for deeply-held respect for the environment.</p>
+<div class="section">
+  <!-- portfolio section -->
+  <div id="portfolio_section" style="width: 99%;">
+    <h1 class="display-4 d-flex justify-content-center">Portfolio</h1>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-4 col-sm-10 d-flex align-items-stretch">
+          <div class="card" >
+            <img class="card-img-top" src="images/1.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">The Whale Island</h5>
+              <p class="card-text">The Island Whale is my last critique drawing created in FIN-110 on Fall term 2020. The basic concept is about the greatness of nature and how human lives are bonded with it. The project was inspired by the Indigenous origin stories about a turtle island, which also stands for deeply-held respect for the environment.</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-4 col-sm-10 d-flex align-items-stretch">
-      <div class="card">
-        <img class="card-img-top" src="images/2.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Osaka Sushi Re-Branding</h5>
-          <p class="card-text">A re-branding design for a local business in Courtenay. Created in DGL -202 on Fall term 2020. Includes a stationery package and packaging supplies.</p>
+        <div class="col-md-4 col-sm-10 d-flex align-items-stretch">
+          <div class="card">
+            <img class="card-img-top" src="images/2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Osaka Sushi Re-Branding</h5>
+              <p class="card-text">A re-branding design for a local business in Courtenay. Created in DGL -202 on Fall term 2020. Includes a stationery package and packaging supplies.</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-4 col-sm-10 d-flex align-items-stretch">
-      <div class="card">
-        <img class="card-img-top" src="images/3.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">PAWSOME Pet Finder App</h5>
-          <p class="card-text">PAWSOME is a pet finder UI - UX design created in DGL-111 on Winter term 2021. The design is aimed to create an user interface and user experience that works best for people who is looking for a furry companion. View app prototype for more details.</p>
+        <div class="col-md-4 col-sm-10 d-flex align-items-stretch">
+          <div class="card">
+            <img class="card-img-top" src="images/3.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">PAWSOME Pet Finder App</h5>
+              <p class="card-text">PAWSOME is a pet finder UI - UX design created in DGL-111 on Winter term 2021. The design is aimed to create an user interface and user experience that works best for people who is looking for a furry companion. View app prototype for more details.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <!-- animation section -->
+  <div id="animation_section" style="width: 99%;">
+    <h1 class="display-4 d-flex justify-content-center">Animation</h1>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4 col-sm-10 border border-primary bg-light" data-toggle="tooltip_auto_typing" title="Animation auto typing">
+          <div class="item animation1">
+            <h1 class="display-5">Auto typing</h1>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-10 border border-primary" data-toggle="tooltip_change_size" data-placement="bottom" title="Animation change size">
+          <div class="item animation2">
+            <h1 class="display-5 justify-content-center d-flex flex-wrap" >Big & small</h1>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-10 border border-primary d-flex flex-wrap" data-toggle="tooltip_cubic_bezier" data-placement="right" title="Animation increase width">
+          <div class="item animation3">
+            <h1 class="display-5" >>></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- skills section -->
+  <!-- education section -->
 </div>
-<div>
-</div>
-<!-- animation section -->
-<!-- skills section -->
-<!-- education section -->
 <!-- footer -->
 
 <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
