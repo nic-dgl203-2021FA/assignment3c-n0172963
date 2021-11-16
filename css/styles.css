@@ -56,3 +56,84 @@
 .animation3:hover {
     width: 600px;
 }
+
+/*----------------------- custom style ------------------------*/
+
+
+/* background color */
+
+.bg-primary{
+  background-color: rgb(175, 88, 175) !important;
+}
+
+.bg-secondary{
+  background-color: pink !important;
+}
+
+.bg-success{
+  background-color: rgb(47, 255, 141) !important;
+}
+
+.bg-danger{
+  background-color: rgb(230, 55, 32) !important;
+}
+
+.bg-warning{
+  background-color: rgb(226, 161, 19) !important;
+}
+
+.bg-info{
+  background-color: rgb(205, 237, 245) !important;
+}
+
+/* button color */
+
+.btn-primary{
+  background-color: purple !important;
+}
+
+.btn-secondary{
+
+}
+
+.btn-success{
+
+}
+
+.btn-danger{
+
+}
+
+.btn-warning{
+
+}
+
+.btn-info{
+
+}
+
+/* text color */
+
+.text-primary{
+  color: #f5f5f5;
+}
+
+.text-secondary{
+  color:rgb(24, 11, 14);
+}
+
+.text-success{
+
+}
+
+.text-danger{
+
+}
+
+.text-warning{
+
+}
+
+.text-info{
+  color:rgb(205, 237, 245);
+}
