@@ -63,11 +63,11 @@
 /* background color */
 
 .bg-primary{
-  background-color: rgb(175, 88, 175) !important;
+  background-color: rgb(42, 56, 60) !important;
 }
 
 .bg-secondary{
-  background-color: pink !important;
+  background-color: rgb(123, 145, 163) !important;
 }
 
 .bg-success{
@@ -83,13 +83,13 @@
 }
 
 .bg-info{
-  background-color: rgb(205, 237, 245) !important;
+  background-color: rgb(237, 245, 253) !important;
 }
 
 /* button color */
 
 .btn-primary{
-  background-color: purple !important;
+  background-color: rgb(42, 56, 60) !important;
 }
 
 .btn-secondary{
